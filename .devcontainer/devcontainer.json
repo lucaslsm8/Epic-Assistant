@@ -33,6 +33,13 @@
     }
   },
   
-  "postCreateCommand": "npm install",
-  "postStartCommand": "npm run dev"
+  "postCreateCommand": "chmod +x start-codespace.sh && npm install",
+  "postStartCommand": "./start-codespace.sh",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Epic Seven Assistant",
+      "onAutoForward": "notify"
+    }
+  }
 } 
