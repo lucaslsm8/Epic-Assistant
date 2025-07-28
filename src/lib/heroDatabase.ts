@@ -13,10 +13,9 @@ export const heroDatabase: Hero[] = [
     description: 'A master swordsman seeking revenge against those who wronged him.',
     story: 'Once a knight of Wintenberg, Vildred was betrayed and executed, only to be resurrected by dark magic. He now seeks revenge against those who wronged him.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'AoE farming and cleaving',
-    tags: ['farmer', 'cleaver', 'speed'],
+    tags: ['farmer', 'cleaver', \'speed'],
     difficulty: 'Easy',
     usage: {
       pve: 10,
@@ -77,7 +76,6 @@ export const heroDatabase: Hero[] = [
     description: 'A genius strategist and commander of the Eureka Mercenary Corps.',
     story: 'Bellona leads her mercenary group with tactical brilliance and unwavering loyalty. Her strategic mind makes her a formidable opponent.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Boss hunting and AoE damage',
     tags: ['boss-killer', 'aoe', 'defense-break'],
@@ -141,10 +139,9 @@ export const heroDatabase: Hero[] = [
     description: 'A powerful dragon knight with immense physical strength.',
     story: 'Luna serves as a loyal guardian, wielding the power of dragons in battle. Her dragon heritage grants her immense physical strength.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Single target DPS and Wyvern hunting',
-    tags: ['single-target', 'wyvern', 'defense-break'],
+    tags: [\'single-target', 'wyvern', 'defense-break'],
     difficulty: 'Easy',
     usage: {
       pve: 8,
@@ -203,9 +200,8 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/krau.png',
     description: 'A noble knight with powerful defensive abilities.',
-    story: 'A noble knight with powerful defensive abilities. Krau's unwavering loyalty and defensive prowess make him a reliable protector.',
+    story: 'A noble knight with powerful defensive abilities. Krau\\'s unwavering loyalty and defensive prowess make him a reliable protector.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Tank and AoE damage',
     tags: ['tank', 'aoe', 'defense'],
@@ -267,12 +263,11 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/ken.png',
     description: 'A martial artist with incredible strength and fighting spirit.',
-    story: 'A martial artist with incredible strength and fighting spirit. Ken's mastery of martial arts makes him a formidable warrior.',
+    story: 'A martial artist with incredible strength and fighting spirit. Ken\\'s mastery of martial arts makes him a formidable warrior.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Bruiser and sustain',
-    tags: ['bruiser', 'sustain', 'counter'],
+    tags: ['bruiser', \'sustain', 'counter'],
     difficulty: 'Medium',
     usage: {
       pve: 7,
@@ -333,7 +328,6 @@ export const heroDatabase: Hero[] = [
     description: 'A legendary knight with powerful counter-attack abilities.',
     story: 'A legendary knight with powerful counter-attack abilities. Charles' experience and skill make him a master of combat.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Counter-attack and buff removal',
     tags: ['counter', 'buff-removal', 'tank'],
@@ -395,12 +389,11 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/tywin.png',
     description: 'A noble commander with powerful support abilities.',
-    story: 'A noble commander with powerful support abilities. Tywin's leadership and tactical skills make him an invaluable ally.',
+    story: 'A noble commander with powerful support abilities. Tywin\\'s leadership and tactical skills make him an invaluable ally.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Support and CR push',
-    tags: ['support', 'cr-push', 'defense-break'],
+    tags: [\'support', 'cr-push', 'defense-break'],
     difficulty: 'Medium',
     usage: {
       pve: 8,
@@ -451,7 +444,7 @@ export const heroDatabase: Hero[] = [
     }
   },
   {
-    id: 'sez',
+    id: \'sez',
     name: 'Sez',
     rarity: 5,
     element: Element.ICE,
@@ -459,12 +452,11 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/sez.png',
     description: 'A ruthless assassin with deadly precision.',
-    story: 'A ruthless assassin with deadly precision. Sez's stealth and assassination skills make him a feared opponent.',
+    story: 'A ruthless assassin with deadly precision. Sez\'s stealth and assassination skills make him a feared opponent.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Single target burst damage',
-    tags: ['burst', 'single-target', 'assassin'],
+    tags: ['burst', \'single-target', 'assassin'],
     difficulty: 'Medium',
     usage: {
       pve: 6,
@@ -515,7 +507,7 @@ export const heroDatabase: Hero[] = [
     }
   },
   {
-    id: 'sigret',
+    id: \'sigret',
     name: 'Sigret',
     rarity: 5,
     element: Element.ICE,
@@ -523,12 +515,11 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/sigret.png',
     description: 'A powerful warrior with extinction abilities.',
-    story: 'A powerful warrior with extinction abilities. Sigret's ability to permanently eliminate enemies makes her a valuable asset.',
+    story: 'A powerful warrior with extinction abilities. Sigret\'s ability to permanently eliminate enemies makes her a valuable asset.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Extinction and single target damage',
-    tags: ['extinction', 'single-target', 'boss-killer'],
+    tags: ['extinction', \'single-target', 'boss-killer'],
     difficulty: 'Medium',
     usage: {
       pve: 8,
@@ -587,9 +578,8 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/kayron.png',
     description: 'A mysterious swordsman with immortality.',
-    story: 'A mysterious swordsman with immortality. Kayron's dark powers and immortality make him an unstoppable force.',
+    story: 'A mysterious swordsman with immortality. Kayron\'s dark powers and immortality make him an unstoppable force.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Immortality and AoE damage',
     tags: ['immortality', 'aoe', 'cleaver'],
@@ -651,12 +641,11 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/iseria.png',
     description: 'A skilled archer with powerful support abilities.',
-    story: 'A skilled archer with powerful support abilities. Iseria's tactical mind and support skills make her invaluable.',
+    story: 'A skilled archer with powerful support abilities. Iseria\'s tactical mind and support skills make her invaluable.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Support and skill reset',
-    tags: ['support', 'skill-reset', 'defense-break'],
+    tags: [\'support', \'skill-reset', 'defense-break'],
     difficulty: 'Hard',
     usage: {
       pve: 8,
@@ -715,12 +704,11 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/tamarinne.png',
     description: 'An idol with powerful healing and support abilities.',
-    story: 'An idol with powerful healing and support abilities. Tamarinne's cheerful personality and healing powers bring hope to allies.',
+    story: 'An idol with powerful healing and support abilities. Tamarinne\'s cheerful personality and healing powers bring hope to allies.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Healing and CR push',
-    tags: ['heal', 'cr-push', 'support'],
+    tags: ['heal', 'cr-push', \'support'],
     difficulty: 'Easy',
     usage: {
       pve: 10,
@@ -779,9 +767,8 @@ export const heroDatabase: Hero[] = [
     zodiac: Zodiac.ARIES, // Placeholder
     image: '/heroes/yufine.png',
     description: 'A dragon knight with powerful AoE abilities.',
-    story: 'A dragon knight with powerful AoE abilities. Yufine's dragon heritage grants her immense power and destructive capabilities.',
+    story: 'A dragon knight with powerful AoE abilities. Yufine\'s dragon heritage grants her immense power and destructive capabilities.',
     isML: false,
-    
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'AoE damage and buff removal',
     tags: ['aoe', 'buff-removal', 'dragon'],
@@ -1169,7 +1156,7 @@ export const heroDatabase: Hero[] = [
     baseHero: 'ken',
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Counter-attack and sustain',
-    tags: ['counter', 'sustain', 'bruiser'],
+    tags: ['counter', \'sustain', 'bruiser'],
     difficulty: 'Hard',
     usage: {
       pve: 7,
@@ -1233,7 +1220,7 @@ export const heroDatabase: Hero[] = [
     baseHero: 'cidd',
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Speed and single target burst',
-    tags: ['speed', 'burst', 'assassin'],
+    tags: [\'speed', 'burst', 'assassin'],
     difficulty: 'Medium',
     usage: {
       pve: 6,
@@ -1297,7 +1284,7 @@ export const heroDatabase: Hero[] = [
     baseHero: 'coli',
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Stealth and single target burst',
-    tags: ['stealth', 'burst', 'assassin'],
+    tags: [\'stealth', 'burst', 'assassin'],
     difficulty: 'Medium',
     usage: {
       pve: 5,
@@ -1361,7 +1348,7 @@ export const heroDatabase: Hero[] = [
     baseHero: 'lots',
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'CR push and support',
-    tags: ['cr-push', 'support', 'mage'],
+    tags: ['cr-push', \'support', 'mage'],
     difficulty: 'Medium',
     usage: {
       pve: 7,
@@ -1489,7 +1476,7 @@ export const heroDatabase: Hero[] = [
     baseHero: 'karin',
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Stealth and single target burst',
-    tags: ['stealth', 'burst', 'assassin'],
+    tags: [\'stealth', 'burst', 'assassin'],
     difficulty: 'Medium',
     usage: {
       pve: 5,
@@ -1540,7 +1527,7 @@ export const heroDatabase: Hero[] = [
     }
   },
   {
-    id: 'shadow-rose',
+    id: \'shadow-rose',
     name: 'Shadow Rose',
     rarity: 5,
     element: Element.DARK,
@@ -1604,7 +1591,7 @@ export const heroDatabase: Hero[] = [
     }
   },
   {
-    id: 'silver-blade-aramintha',
+    id: \'silver-blade-aramintha',
     name: 'Silver Blade Aramintha',
     rarity: 5,
     element: Element.LIGHT,
@@ -1681,7 +1668,7 @@ export const heroDatabase: Hero[] = [
     baseHero: 'dingo',
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Healing and attack buff',
-    tags: ['heal', 'attack-buff', 'support'],
+    tags: ['heal', 'attack-buff', \'support'],
     difficulty: 'Medium',
     usage: {
       pve: 8,
@@ -1745,7 +1732,7 @@ export const heroDatabase: Hero[] = [
     baseHero: 'aither',
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Healing and CR push',
-    tags: ['heal', 'cr-push', 'support'],
+    tags: ['heal', 'cr-push', \'support'],
     difficulty: 'Medium',
     usage: {
       pve: 7,
@@ -1806,10 +1793,10 @@ export const heroDatabase: Hero[] = [
     description: 'A divine archer with speed and precision.',
     story: 'A divine archer with speed and precision. Her divine guidance and archery skills make her a deadly opponent.',
     isML: true,
-    baseHero: 'silk',
+    baseHero: \'silk',
     releaseDate: '2018-08-30', // Placeholder
     specialty: 'Speed and single target damage',
-    tags: ['speed', 'single-target', 'ranger'],
+    tags: [\'speed', \'single-target', 'ranger'],
     difficulty: 'Medium',
     usage: {
       pve: 6,
