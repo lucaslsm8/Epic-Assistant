@@ -135,26 +135,26 @@ export default function HeroesPage() {
         />
         
         {/* Top Left - Element Badge */}
-        <div className={`absolute top-2 left-2 w-7 h-7 bg-gradient-to-br ${getElementColor(hero.element)} rounded-full flex items-center justify-center shadow-lg border-2 border-white/20`}>
-          <span className="text-xs font-bold text-white">
+        <div className={`absolute top-2 left-2 w-8 h-8 bg-gradient-to-br ${getElementColor(hero.element)} rounded-full flex items-center justify-center shadow-lg border-2 border-white/20 backdrop-blur-sm`}>
+          <span className="text-xs font-bold text-white drop-shadow-sm">
             {hero.element.charAt(0).toUpperCase()}
           </span>
         </div>
         
         {/* Top Right - ML Badge */}
         {hero.isML && (
-          <div className="absolute top-2 right-2 bg-gradient-to-r from-purple-500 to-violet-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg border border-white/20">
+          <div className="absolute top-2 right-2 bg-gradient-to-r from-purple-500 to-violet-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg border border-white/20 backdrop-blur-sm">
             ML
           </div>
         )}
         
         {/* Bottom Left - Tier Badge */}
-        <div className={`absolute bottom-2 left-2 px-2 py-1 rounded-lg text-xs font-bold ${getTierColor(hero.tierData?.pvp.arena)} border border-white/20`}>
+        <div className={`absolute bottom-2 left-2 px-2 py-1 rounded-lg text-xs font-bold ${getTierColor(hero.tierData?.pvp.arena)} border border-white/20 bg-black/50 backdrop-blur-sm`}>
           {hero.tierData?.pvp.arena || 'C'}
         </div>
         
         {/* Bottom Right - Rarity Stars */}
-        <div className="absolute bottom-2 right-2 flex space-x-0.5">
+        <div className="absolute bottom-2 right-2 flex space-x-0.5 bg-black/50 backdrop-blur-sm rounded-lg px-1 py-0.5">
           {Array.from({ length: hero.rarity }, (_, i) => (
             <Star key={i} className="w-3 h-3 text-yellow-400 fill-current drop-shadow-sm" />
           ))}
