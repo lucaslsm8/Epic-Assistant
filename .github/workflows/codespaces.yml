@@ -1,0 +1,12 @@
+name: Codespaces Configuration
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Codespaces
+      run: echo "Codespaces ready" 

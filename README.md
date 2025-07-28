@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Epic Seven Assistant
 
-## Getting Started
+Uma aplicação web completa para auxiliar jogadores do Epic Seven com informações sobre heróis, builds, tier lists e estratégias.
 
-First, run the development server:
+## 🚀 Como Usar
 
+### Opção 1: GitHub Codespaces (Recomendado)
+1. Vá para o repositório no GitHub
+2. Clique no botão "Code" → "Codespaces"
+3. Clique em "Create codespace on main"
+4. Aguarde o ambiente carregar
+5. O servidor será iniciado automaticamente na porta 3000
+
+### Opção 2: Deploy Automático (Vercel)
+- A cada push para `main`, o projeto é automaticamente deployado
+- URL pública disponível para compartilhamento
+- Preview automático em pull requests
+
+### Opção 3: Local Development
 ```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/epic-seven-assistant.git
+cd epic-seven-assistant
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Abra http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📊 Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ✅ Implementado
+- **29 heróis** com dados completos (13 RGB + 16 ML)
+- **Sistema de busca** avançado
+- **Filtros** por elemento, role, raridade, ML
+- **Páginas individuais** dos heróis
+- **Tier rankings** para PvP e PvE
+- **Estatísticas detalhadas** de cada herói
+- **Sinergias e contadores** reais
+- **Interface responsiva** e moderna
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🚧 Em Desenvolvimento
+- Sistema de Builds
+- Sistema de Favoritos
+- Comparador de Heróis
+- Sistema de Notas Pessoais
 
-## Learn More
+## 🛠️ Tecnologias
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 14** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **Lucide React** - Ícones
+- **GitHub Actions** - CI/CD
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Estrutura do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+epic-seven-assistant/
+├── src/
+│   ├── app/                 # Páginas Next.js
+│   │   ├── heroes/         # Lista de heróis
+│   │   └── heroes/[id]/    # Página individual
+│   ├── components/         # Componentes React
+│   ├── lib/               # Utilitários e dados
+│   └── types/             # Definições TypeScript
+├── public/
+│   └── heroes/            # Imagens dos heróis
+└── .github/               # Configurações GitHub
+```
 
-## Deploy on Vercel
+## 🎮 Heróis Disponíveis
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### RGB 5★ (13 heróis)
+- Vildred, Bellona, Luna, Krau, Ken
+- Charles, Tywin, Sez, Sigret, Kayron
+- Iseria, Tamarinne, Yufine
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ML 5★ (16 heróis)
+- Arbiter Vildred, Ruele of Light
+- Fallen Cecilia, Judge Kise, Dark Corvus
+- Martial Artist Ken, Assassin Cidd, Assassin Coli
+- Auxiliary Lots, Challenger Dominiel
+- Blood Blade Karin, Shadow Rose
+- Silver Blade Aramintha, Blaze Dingo
+- Guider Aither, Wanderer Silk
+
+## 🔧 Scripts Disponíveis
+
+```bash
+npm run dev          # Servidor de desenvolvimento
+npm run build        # Build para produção
+npm run start        # Servidor de produção
+npm run lint         # Verificação de código
+```
+
+## 🌐 Deploy
+
+O projeto está configurado para deploy automático no Vercel:
+
+1. **Fork** o repositório
+2. Conecte ao **Vercel**
+3. Configure as variáveis de ambiente (se necessário)
+4. Deploy automático a cada push
+
+## 🤝 Contribuindo
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 🎯 Roadmap
+
+- [ ] Sistema de Builds detalhado
+- [ ] Sistema de Favoritos
+- [ ] Comparador de Heróis
+- [ ] Sistema de Notas Pessoais
+- [ ] Mais heróis (4★ e 3★)
+- [ ] Atualizações de tier automáticas
+- [ ] Modo escuro/claro
+- [ ] PWA (Progressive Web App)
+
+---
+
+**Desenvolvido com ❤️ para a comunidade Epic Seven**
