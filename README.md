@@ -1,134 +1,136 @@
 # Epic Seven Assistant
 
-Uma aplicação web completa para auxiliar jogadores do Epic Seven com informações sobre heróis, builds, tier lists e estratégias.
+Uma aplicação web para ajudar jogadores de Epic Seven com informações sobre heróis, builds, tier lists e estratégias.
 
-## 🚀 Como Usar
+## 🚀 Início Rápido
 
-### Opção 1: GitHub Codespaces (Recomendado)
-1. Vá para o repositório no GitHub
-2. Clique no botão "Code" → "Codespaces"
-3. Clique em "Create codespace on main"
-4. Aguarde o ambiente carregar
-5. O servidor será iniciado automaticamente na porta 3000
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou yarn
 
-### Opção 2: Deploy Automático (Vercel)
-- A cada push para `main`, o projeto é automaticamente deployado
-- URL pública disponível para compartilhamento
-- Preview automático em pull requests
+### Instalação e Execução
 
-### Opção 3: Local Development
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/epic-seven-assistant.git
-cd epic-seven-assistant
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/lucaslsm8/Epic-Assistant.git
+   cd Epic-Assistant/epic-seven-assistant
+   ```
 
-# Instale as dependências
-npm install
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
 
-# Inicie o servidor de desenvolvimento
-npm run dev
+3. **Inicie o servidor**
+   ```bash
+   npm run dev
+   ```
+   
+   Ou simplesmente execute:
+   ```bash
+   start.bat
+   ```
 
-# Abra http://localhost:3000
-```
+4. **Acesse a aplicação**
+   - Abra: http://localhost:3000
 
-## 📊 Funcionalidades
+## 🎮 Funcionalidades
 
-### ✅ Implementado
-- **29 heróis** com dados completos (13 RGB + 16 ML)
-- **Sistema de busca** avançado
-- **Filtros** por elemento, role, raridade, ML
-- **Páginas individuais** dos heróis
-- **Tier rankings** para PvP e PvE
-- **Estatísticas detalhadas** de cada herói
-- **Sinergias e contadores** reais
-- **Interface responsiva** e moderna
+### ✅ Implementadas
+- **Lista de Heróis**: Visualização de todos os heróis disponíveis
+- **Filtros**: Por elemento, role, raridade e ML
+- **Busca**: Pesquisa por nome, tags e especialidade
+- **Detalhes do Herói**: Informações completas, stats, tier list
+- **Interface Responsiva**: Funciona em desktop e mobile
 
 ### 🚧 Em Desenvolvimento
 - Sistema de Builds
 - Sistema de Favoritos
 - Comparador de Heróis
-- Sistema de Notas Pessoais
+- Sistema de Notas
+- Mais heróis (4★ e 3★)
 
 ## 🛠️ Tecnologias
 
-- **Next.js 14** - Framework React
+- **Next.js 15** - Framework React
 - **TypeScript** - Tipagem estática
 - **Tailwind CSS** - Estilização
 - **Lucide React** - Ícones
-- **GitHub Actions** - CI/CD
+- **Vercel** - Deploy
 
 ## 📁 Estrutura do Projeto
 
 ```
-epic-seven-assistant/
-├── src/
-│   ├── app/                 # Páginas Next.js
-│   │   ├── heroes/         # Lista de heróis
-│   │   └── heroes/[id]/    # Página individual
-│   ├── components/         # Componentes React
-│   ├── lib/               # Utilitários e dados
-│   └── types/             # Definições TypeScript
-├── public/
-│   └── heroes/            # Imagens dos heróis
-└── .github/               # Configurações GitHub
+src/
+├── app/                    # Páginas da aplicação
+│   ├── heroes/            # Lista e detalhes dos heróis
+│   ├── arena-scanner/     # Scanner de arena
+│   ├── artifacts/         # Sistema de artefatos
+│   └── ...               # Outras funcionalidades
+├── components/            # Componentes reutilizáveis
+├── lib/                  # Utilitários e banco de dados
+└── types/                # Definições de tipos
 ```
 
-## 🎮 Heróis Disponíveis
+## 🎯 Heróis Disponíveis
 
-### RGB 5★ (13 heróis)
-- Vildred, Bellona, Luna, Krau, Ken
-- Charles, Tywin, Sez, Sigret, Kayron
-- Iseria, Tamarinne, Yufine
-
-### ML 5★ (16 heróis)
-- Arbiter Vildred, Ruele of Light
-- Fallen Cecilia, Judge Kise, Dark Corvus
-- Martial Artist Ken, Assassin Cidd, Assassin Coli
-- Auxiliary Lots, Challenger Dominiel
-- Blood Blade Karin, Shadow Rose
-- Silver Blade Aramintha, Blaze Dingo
-- Guider Aither, Wanderer Silk
+Atualmente temos **5 heróis** principais:
+- **Vildred** (Earth Thief) - Farmer e cleaver
+- **Bellona** (Earth Ranger) - Boss killer
+- **Luna** (Ice Warrior) - Wyvern hunter
+- **Krau** (Ice Knight) - Tank defensivo
+- **Ken** (Fire Warrior) - Bruiser sustain
 
 ## 🔧 Scripts Disponíveis
 
 ```bash
-npm run dev          # Servidor de desenvolvimento
-npm run build        # Build para produção
-npm run start        # Servidor de produção
-npm run lint         # Verificação de código
+npm run dev      # Inicia servidor de desenvolvimento
+npm run build    # Build para produção
+npm run start    # Inicia servidor de produção
+npm run lint     # Executa linter
 ```
 
-## 🌐 Deploy
+## 📝 Desenvolvimento
+
+### Adicionando Novos Heróis
+1. Adicione a imagem em `public/heroes/`
+2. Atualize `src/lib/heroDatabase.ts`
+3. Siga o padrão dos heróis existentes
+
+### Estrutura de Dados do Herói
+```typescript
+interface Hero {
+  id: string;
+  name: string;
+  rarity: number;
+  element: Element;
+  role: Role;
+  image: string;
+  description: string;
+  story: string;
+  specialty: string;
+  tags: string[];
+  difficulty: string;
+  usage: UsageStats;
+  strengths: string[];
+  weaknesses: string[];
+  synergies: string[];
+  counters: string[];
+  stats: HeroStats;
+  tierData: TierData;
+}
+```
+
+## 🚀 Deploy
 
 O projeto está configurado para deploy automático no Vercel:
+- **URL**: https://epic-seven-assistant.vercel.app
+- **GitHub**: https://github.com/lucaslsm8/Epic-Assistant
 
-1. **Fork** o repositório
-2. Conecte ao **Vercel**
-3. Configure as variáveis de ambiente (se necessário)
-4. Deploy automático a cada push
+## 📞 Suporte
 
-## 🤝 Contribuindo
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
-## 🎯 Roadmap
-
-- [ ] Sistema de Builds detalhado
-- [ ] Sistema de Favoritos
-- [ ] Comparador de Heróis
-- [ ] Sistema de Notas Pessoais
-- [ ] Mais heróis (4★ e 3★)
-- [ ] Atualizações de tier automáticas
-- [ ] Modo escuro/claro
-- [ ] PWA (Progressive Web App)
+- **Issues**: https://github.com/lucaslsm8/Epic-Assistant/issues
+- **Discord**: [Link do servidor]
 
 ---
 
